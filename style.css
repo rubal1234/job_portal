@@ -1,0 +1,113 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.top-nav{
+	font-family: Roboto;
+	height: 69px;
+	box-shadow: 0px 0px 29px #00000029;
+	background: skyblue;
+	text-align: end;
+}
+.top-nav a{
+	cursor: pointer;
+	color: #000;
+	font-family: Roboto;
+	display: inline-block;
+	padding: 24px 16px;
+	text-decoration: none;
+}
+.top-nav a:hover{
+	color: #fff;
+}
+.top-nav span{
+	font-family: Roboto;
+	float: left;
+    margin: 16px;
+    padding-left: 50px;
+    font-size: 30px;
+    cursor : pointer;
+}
+.top-nav span:hover{
+	color: #fff;
+}
+.active{
+	color: #fff !important;
+}
+.title-text{
+	font-family: Roboto;
+}
+.job-description-div{
+	margin :34px  auto;
+}
+.alert0,.alert,.alert2,.alert3,.alert4,.alert5,.alert6{
+	display: none;
+	position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #f5c6cb;
+    border-radius: .25rem;
+}
+.model{
+	position: absolute;
+    left: 50%;
+    top : 50%;
+    transform: translateX(-150px);
+    background: antiquewhite;
+    color: #fff;
+    font-family: 'Roboto';
+    padding: 10px 16px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 29px #0000000d;
+    border-radius: 8px;
+    opacity: 1;
+    display: none;
+    animation-name: showhide;
+    animation-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+@keyframes showhide{
+	0%{
+		opacity: 1;
+	}
+	90%{
+          opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+.inner-div,.applicants-inner-div{
+	margin : auto;
+	max-width: 500px;
+	padding: 20px;
+	height: auto;
+	border-radius : 4px;
+	box-shadow: 0px 0px 29px #00000029;
+}
+
+.content-div:nth-child(1){
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.content-div:nth-child(2),.content-div:nth-child(3),.content-div:nth-child(4),.content-div:nth-child(5),.content-div:nth-child(6),.content-div:nth-child(7){
+	margin-left: 20px;
+}
+.content-div .title{
+	font-weight: bold;
+}
+.applicant-content-div:nth-child(1){
+	text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.applicant-content-div:nth-child(2),.applicant-content-div:nth-child(3),.applicant-content-div:nth-child(4),.applicant-content-div:nth-child(5){
+	margin-left: 20px;
+}
+.applicant-content-div .title{
+	font-weight: bold;
+}
+
